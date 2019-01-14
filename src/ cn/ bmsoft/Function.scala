@@ -5,7 +5,7 @@ object Function {
   def main(args: Array[String]): Unit = {
 
 
-//变长参数dsdfsdf
+//变长参数dsdfsdfasasdasda
 
 
   //可以使用任意多的参数来调用改函数，函数得到的式Seq 函数
