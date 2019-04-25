@@ -5,8 +5,13 @@ object Function {
   def main(args: Array[String]): Unit = {
 
 
-//变长参数dsdfsdfasasdasda
 
+
+
+
+//当val被声明为lazy时，他的初始化将被推迟，知道我们对他首次取值
+//   lazy val word= scala.io.Source.fromFile("F:/yml/1.txt").mkString
+//  println(word+"-----")
 
   //可以使用任意多的参数来调用改函数，函数得到的式Seq 函数
 //def  sum(args:Int*)={
@@ -18,6 +23,7 @@ object Function {
 //
 //}
 // val i = sum(1,2,3,4,5)
+//    println(i)
 
  //如果sum函数被调用式传入的是单个参数，则参数必须是单个整数
     //而不是一个区间，解决办法：追加 _* 即可
@@ -45,7 +51,7 @@ object Function {
 
 
     // 默认参数和带名参数
-   // def decorate(str:String ,left:String = "[", right :String = "]")=left + str+right
+  // def decorate(str:String ,left:String = "[", right :String = "]")=left + str+right
 
     //也可以在提供参数值的时候，指定参数名称,注意 带参数名并不需要跟参数列表的顺序完全一直 如：
 

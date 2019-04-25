@@ -6,10 +6,10 @@ object Arrays {
 
   def main(args: Array[String]): Unit = {
 
-
+  for (i <- 1 to 3 ; j <- 1 to 4 ) println(10*i+j)
 
     //多唯数组啊是的
-    val a=Array.ofDim[Double](3,4)
+    //val a=Array.ofDim[Double](3,4)
 
 
     //可以对数组排序，但是不能对数组缓冲排序
