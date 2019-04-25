@@ -10,7 +10,7 @@ object Arrays {
 
 
 
-
+//sdd
 //unitl 是RichInt类的方法，返回所有小于(但不包括)上线的数字
   //如果想要每两个元素一跳，则可以使用(o until a.lenth ,2)
     // 如果要从数组尾端开始，则可以使用 (0 until a.length).reverse
