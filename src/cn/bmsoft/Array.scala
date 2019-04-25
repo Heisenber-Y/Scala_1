@@ -6,7 +6,7 @@ object Array {
 
   def main(args: Array[String]): Unit = {
 
-  //变长数组，数组缓冲
+  //变长数组，数组缓冲 haha
     val strings = ArrayBuffer[String]()
     strings  +=("1","2","3")
     strings.insert(2,"a","b","c")
