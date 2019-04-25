@@ -6,7 +6,21 @@ object Arrays {
 
   def main(args: Array[String]): Unit = {
 
-  for (i <- 1 to 3 ; j <- 1 to 4 ) println(10*i+j)
+
+
+
+
+
+//unitl 是RichInt类的方法，返回所有小于(但不包括)上线的数字
+  //如果想要每两个元素一跳，则可以使用(o until a.lenth ,2)
+    // 如果要从数组尾端开始，则可以使用 (0 until a.length).reverse
+//  val a = Array(1, 2, 3, 4, 5)
+//
+//    for (i<- 0 until a.length)
+//      println(i+":"+a(i))
+
+
+ // for (i <- 1 to 3 ; j <- 1 to 4 ) println(10*i+j)
 
     //多唯数组啊是的
     //val a=Array.ofDim[Double](3,4)
@@ -104,7 +118,7 @@ object Arrays {
 
 
     //10个元素的字符串数组，所有元素初始化为null
-    //  val strings = new Array[String](10)
+     //val strings = new Array[String](10)
     //for (elem <- strings) print(elem+"--")
 
 
