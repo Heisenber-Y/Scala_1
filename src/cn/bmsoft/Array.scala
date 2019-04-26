@@ -7,7 +7,7 @@ object Arrays {
   def main(args: Array[String]): Unit = {
 
 
-//映射和元组
+//映射和元组1
 
 
 
