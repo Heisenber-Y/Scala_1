@@ -7,10 +7,54 @@ object Arrays {
   def main(args: Array[String]): Unit = {
 
 
+//映射和元组
 
 
 
-//sdd
+    //1,操作符用来创建对偶
+ // val a="Alice"->10
+//也可以用下面这种方法创建对偶：
+  //  val score=Map(("Alice",10),("Bob",10),("Candy",8))
+
+
+    //2.构造对偶
+    //该代码构造出一个不可变的Map[String,Int],其值不能被改变，
+    //val scores1=Map("Alice"->10,"Bob"->3,"Candy"->8)
+//一个可变的Map
+    //val scores2=new scala.collection.mutable.Map("Alice"->10,"Bob"->3,"Candy"->8)
+
+//获取对偶中的值：
+
+
+
+
+//多唯数组：
+val matrix=Array.ofDim[Double](3,4)
+
+  //常用算法：
+//toString 方法
+    val a=Array(1,2,3,4)
+    println(a.toString());
+
+
+//指定前缀和后缀
+/*  val a=Array(1,2,3,4)
+   println(a.mkString(" and "))
+    println(a.mkString("<",",",">"))*/
+
+
+//sort 方法：
+/*    val a=ArrayBuffer(1,2,6,4)
+    val  b = a.sort
+  println(b)*/
+
+//   val b= ArrayBuffer("1","2","aaa","dddd").min
+//  println("最大的是:"+b)
+
+    //  val a=Array(1,2,3,4,5).sum
+//  println(a+"-----")
+
+
 //unitl 是RichInt类的方法，返回所有小于(但不包括)上线的数字
   //如果想要每两个元素一跳，则可以使用(o until a.lenth ,2)
     // 如果要从数组尾端开始，则可以使用 (0 until a.length).reverse
