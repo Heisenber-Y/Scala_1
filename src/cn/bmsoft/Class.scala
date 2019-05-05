@@ -1,6 +1,7 @@
 package cn.bmsoft
 
 object Class {
+  //20190505
     //简单类和无参方法：
   private var value=0
   def increment (){value +=1}
