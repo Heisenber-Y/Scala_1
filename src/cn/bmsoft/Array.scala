@@ -7,10 +7,64 @@ object Arrays {
   def main(args: Array[String]): Unit = {
 
 
-//映射和元组1
- //20190504
+
+ //20190504 获取映射中的值：
+   //val bobScore=scores("Bob")  //类似与Java中的 scores.get("Bob")
+  //val bobScore=  if(scores.contains("Bob")) scores("Bob") else 0
+  // 快捷写法：
+  //val bobscores= scores.getOrElse("Bob",0);
+
+//更新映射中的值：
+    //更新键"Bob"对应的值
+   //val scores("Bob")=10
+    //增加信的键值对偶到score
+    //scores("Fred")=7
+
+//添加对歌关系使用 ：+=
+//    scores+=("Bob"->10,"Fred"->7)
+//要移除某个键和对应的值使用：-=
+//    scores -="Alice"
+
+//不能更新一个不可变的映射，但是可以获取一个包含所有需要更新的新映射
+
+    //val newScores=scores+("Bob"->10,"Fred->7")
 
 
+//迭代映射：
+
+//for((k,v),<-映射) //处理K和v
+  //scores.keySet    一个类似Set（"A","B"）的集合
+//for (v <- scores.values) print(v)  //将打印 10 ，8 ，7 ，8 或者其他排列组合
+
+//已排序映射
+
+//元组：元组是通过将单个的值包含在圆括号中构成的 ：
+   // (1,3.15,Fred) 是一个元组 类型卫：Tuple3(Int,Double,java.lang.String)
+    // 类型也可以定义卫（Int,Double,java.lang.String）
+    //t._2 和t _2 都可以（是空格而不是句点），但是不能写t_2，元组的各组员从1开始不是0
+/*    val t=(1,3.14,"Fred")
+    //val secend=t._2;
+    val secend=t _2;
+    print(secend)*/
+
+  /* val a= "New York".partition(_.isUpper);
+  print(a)*/
+
+//拉链操作
+
+
+
+
+
+
+
+
+
+
+
+
+
+//20190501
     //1,操作符用来创建对偶
  // val a="Alice"->10
 //也可以用下面这种方法创建对偶：
@@ -29,12 +83,12 @@ object Arrays {
 
 
 //多唯数组：
-val matrix=Array.ofDim[Double](3,4)
+  //val matrix=Array.ofDim[Double](3,4)
 
   //常用算法：
 //toString 方法
-    val a=Array(1,2,3,4)
-    println(a.toString());
+    //val a=Array(1,2,3,4)
+    //println(a.toString());
 
 
 //指定前缀和后缀
